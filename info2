@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follitropin Delta (Rekovelle) in IVF: A Visual Summary for Clinical Lecture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+                max-height: 350px;
+            }
+        }
+        .flowchart-step {
+            border: 2px solid #374C80;
+            background-color: #ffffff;
+            color: #003F5C;
+        }
+        .flowchart-arrow {
+            color: #7A5195;
+        }
+        .stat-card {
+            background-color: #ffffff;
+            border-left: 5px solid #EF5675;
+        }
+        .stat-card-value {
+            color: #BC5090;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#003F5C] mb-2">Follitropin Delta (Rekovelle)</h1>
+            <p class="text-xl md:text-2xl text-[#374C80]">A New Era of Personalized Ovarian Stimulation in IVF</p>
+        </header>
+
+        <main>
+            <section id="molecular-profile" class="mb-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="text-lg text-gray-700 space-y-4">
+                        <h2 class="text-3xl font-bold text-[#003F5C] mb-4">The Molecular Advantage: A More Natural Profile</h2>
+                        <p>Follitropin delta is the only recombinant FSH (rFSH) derived from a human cell line (PER.C6), giving it a glycosylation pattern that is more similar to natural human FSH. This unique molecular structure is not just a technical detail; it is the key to its enhanced clinical properties.</p>
+                        <p>A more acidic profile and higher sialic acid content give follitropin delta a longer half-life and higher potency. This ensures a more sustained and predictable FSH activity in the body, which directly translates to a more controlled and safer ovarian response. This foundational difference underpins its efficacy and safety profile.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl p-8 text-center">
+                        <h3 class="text-2xl font-semibold text-[#374C80] mb-2">The Dosing Philosophy</h3>
+                        <p class="text-lg text-gray-600 mb-4">Algorithm-led vs. Conventional Dosing</p>
+                        <div class="flex items-center justify-center space-x-4">
+                            <span class="text-4xl font-bold text-[#EF5675]">10.0 mcg</span>
+                            <span class="text-4xl font-bold text-gray-400">≈</span>
+                            <span class="text-4xl font-bold text-[#BC5090]">150 IU</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">10.0 mcg/day of Follitropin delta provides an ovarian response similar to 150 IU/day of Follitropin alfa/beta. [Reference: Arce JC, et al. Reprod Biomed Online. 2020;41(4):616–622.]</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="algorithm" class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">The AMH-Based Dosing Algorithm</h2>
+                <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto mb-8">Follitropin delta's "predict and prescribe" model uses key biomarkers *before* treatment starts to tailor the dose, standardizing care and minimizing the guesswork often involved in initial dosing.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="flowchart-step rounded-lg p-4 w-full md:w-1/3 text-center flex flex-col justify-center">
+                        <p class="font-semibold text-lg">Patient's AMH Level & Body Weight Measured</p>
+                    </div>
+                    <div class="text-4xl flowchart-arrow transform md:rotate-0 rotate-90">&rarr;</div>
+                    <div class="flex flex-col space-y-4 w-full md:w-2/3">
+                        <div class="flowchart-step rounded-lg p-4 flex items-center space-x-4">
+                            <div class="bg-[#EF5675] text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-sm shrink-0">&lt;2.1</div>
+                            <div>
+                                <p class="font-semibold">AMH &lt; 2.1 ng/mL (<15 pmol/L)</p>
+                                <p class="text-sm">Fixed daily dose of <strong>12 micrograms</strong>, irrespective of body weight.</p>
+                            </div>
+                        </div>
+                        <div class="flowchart-step rounded-lg p-4 flex items-center space-x-4">
+                            <div class="bg-[#7A5195] text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-sm shrink-0">&ge;2.1</div>
+                            <div>
+                                <p class="font-semibold">AMH &ge; 2.1 ng/mL (≥15 pmol/L)</p>
+                                <p class="text-sm">Daily dose calculated from <strong>0.19 to 0.10 &micro;g/kg</strong>, decreasing as AMH increases.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center text-gray-600 mt-4">This algorithm-driven dosing can be used on its own or as part of a mixed protocol with HP-hMG, providing flexible treatment options.</p>
+            </section>
+
+            <section id="efficacy-safety" class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-8">Efficacy and Safety: New Insights from Meta-Analysis</h2>
+                <p class="text-center text-gray-700 max-w-3xl mx-auto mb-8">An individual patient data meta-analysis provides high-quality evidence that follitropin delta's efficacy and safety outcomes are significantly improved in high-AMH patients, while remaining comparable for those with lower AMH.</p>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-semibold text-[#003F5C] mb-2 text-center">Follitropin Delta Outcomes by AMH Level (Adjusted Odds Ratio vs. Conventional)</h3>
+                    <p class="text-center text-gray-600 mb-4">An odds ratio >1.0 indicates better outcomes for Follitropin Delta, while <1.0 indicates worse outcomes. A lower OHSS risk is a positive outcome, so an OR <1.0 is favorable.</p>
+                    <div class="chart-container">
+                        <canvas id="AMHOutcomesChart"></canvas>
+                    </div>
+                    <p class="text-xs text-center text-gray-500 mt-2">[Reference: Nelson S, et al. Fertil Steril. 2024]</p>
+                </div>
+            </section>
+
+            <section id="rita-trials" class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-8">RITA Trials: Efficacy with Age-Based Dosing</h2>
+                <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto mb-8">The RITA trials demonstrated that follitropin delta, when dosed based on maternal age, is an effective and safe therapeutic. The trials used cumulative ongoing pregnancy rate as a new primary endpoint, capturing the full potential of a single stimulation cycle.</p>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-semibold text-[#003F5C] mb-2 text-center">Cumulative Live Birth Rates in RITA Trials</h3>
+                    <p class="text-center text-gray-600 mb-4">This chart compares the cumulative live birth rate achieved after follitropin delta treatment in the RITA-1 and RITA-2 trials, categorized by patient age group.</p>
+                    <div class="chart-container">
+                        <canvas id="RITALiveBirthChart"></canvas>
+                    </div>
+                    <p class="text-xs text-center text-gray-500 mt-2">[Reference: Scheiber MD, et al. Fertil Steril. 2025]</p>
+                </div>
+            </section>
+
+            <section id="trial-comparison" class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Comparative Efficacy & Safety from Key Trials</h2>
+                <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto mb-8">The following charts compare Follitropin Delta to its conventional comparators (Follitropin Alfa or Beta) from three pivotal Phase III trials. The data demonstrates that Follitropin Delta consistently achieves high efficacy with a superior safety profile.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#003F5C] mb-2">Live Birth Rates in Phase III Trials</h3>
+                        <div class="chart-container">
+                            <canvas id="trialComparisonChart"></canvas>
+                        </div>
+                        <p class="text-xs text-center text-gray-500 mt-2">[References: Nyboe Andersen et al. Fertil Steril. 2017; Qiao et al. Hum Reprod. 2021; Ishihara et al. Reprod Biomed Online. 2021]</p>
+                    </div>
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#003F5C] mb-2">OHSS Risk in Phase III Trials</h3>
+                        <div class="chart-container">
+                            <canvas id="ohssComparisonChart"></canvas>
+                        </div>
+                        <p class="text-xs text-center text-gray-500 mt-2">[References: Nyboe Andersen et al. Fertil Steril. 2017; Qiao et al. Hum Reprod. 2021; Ishihara et al. Reprod Biomed Online. 2021]</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="real-world" class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Real-World Evidence: Consistency with Clinical Trials</h2>
+                <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto mb-8">Observational studies (PROFILE, DELTA, Bachmann et al.) confirm that the efficacy and safety profiles of follitropin delta are consistent across diverse real-world populations, validating the results from the initial randomized controlled trials (ESTHER-1).</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#003F5C] mb-2">Oocyte Retrieval</h3>
+                        <p class="text-gray-600 mb-4">The number of retrieved oocytes in real-world settings (RWE) is consistent with the ESTHER-1 trial, demonstrating predictable ovarian response.</p>
+                        <div class="chart-container h-80">
+                            <canvas id="oocyteRWEChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#003F5C] mb-2">Ongoing Pregnancy Rates</h3>
+                        <p class="text-gray-600 mb-4">Ongoing pregnancy rates in RWE studies are comparable to those observed in the pivotal ESTHER-1 trial, confirming robust clinical outcomes.</p>
+                        <div class="chart-container h-80">
+                            <canvas id="pregnancyRWEChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="comparative" class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-8">Key Features Compared: Follitropin Delta vs Other Recombinant FSH</h2>
+                <p class="text-center text-gray-700 max-w-3xl mx-auto mb-4">A summary of the key biochemical and structural differences that define the unique characteristics of Follitropin Delta, Alfa, and Beta.</p>
+                <div class="overflow-x-auto bg-white rounded-lg shadow-md p-4">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-[#003F5C] text-white">
+                            <tr>
+                                <th class="p-3">Feature</th>
+                                <th class="p-3">Follitropin Delta</th>
+                                <th class="p-3">Follitropin Alfa</th>
+                                <th class="p-3">Follitropin Beta</th>
+                                <th class="p-3">Corifollitropin Alfa</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y">
+                            <tr class="bg-blue-50">
+                                <td class="p-3 font-bold">Expression System</td>
+                                <td class="p-3">Human Retinal Cells (PER.C6)</td>
+                                <td class="p-3">Chinese Hamster Ovary (CHO)</td>
+                                <td class="p-3">Chinese Hamster Ovary (CHO)</td>
+                                <td class="p-3">Chinese Hamster Ovary (CHO)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold">Iso-form Distribution</td>
+                                <td class="p-3">More acidic profile</td>
+                                <td class="p-3">Less acidic profile</td>
+                                <td class="p-3">Less acidic profile</td>
+                                <td class="p-3">Less acidic profile</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="p-3 font-bold">Total Sialic Acid Content</td>
+                                <td class="p-3">High</td>
+                                <td class="p-3">Medium</td>
+                                <td class="p-3">Medium</td>
+                                <td class="p-3">Medium</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold">2,6-linked Sialic Acid</td>
+                                <td class="p-3">Present</td>
+                                <td class="p-3">Not present</td>
+                                <td class="p-3">Not present</td>
+                                <td class="p-3">Not present</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="p-3 font-bold">Half-life</td>
+                                <td class="p-3">Longer (~51-61 hrs)</td>
+                                <td class="p-3">Shorter (~24-48 hrs)</td>
+                                <td class="p-3">Shorter (~24-48 hrs)</td>
+                                <td class="p-3">Longest (~70 hrs)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="comparative-all-gonadotropins" class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-8">Comparative Overview of Gonadotropins in IVF</h2>
+                <p class="text-center text-gray-700 max-w-3xl mx-auto mb-4">A summary of key characteristics of various gonadotropin formulations to facilitate a comprehensive clinical comparison.</p>
+                <div class="overflow-x-auto bg-white rounded-lg shadow-md p-4">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-[#003F5C] text-white">
+                            <tr>
+                                <th class="p-3">Gonadotropin</th>
+                                <th class="p-3">Active Substance</th>
+                                <th class="p-3">Source</th>
+                                <th class="p-3">Dosing Unit</th>
+                                <th class="p-3">Typical Dosing Frequency</th>
+                                <th class="p-3">Key Feature</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y">
+                            <tr class="bg-blue-50">
+                                <td class="p-3 font-bold">Follitropin Delta (Rekovelle)</td>
+                                <td class="p-3">Follitropin delta</td>
+                                <td class="p-3">Recombinant</td>
+                                <td class="p-3">Micrograms (&micro;g)</td>
+                                <td class="p-3">Daily</td>
+                                <td class="p-3">AMH/Weight-based personalized dosing</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold">Follitropin Alfa (Gonal-F)</td>
+                                <td class="p-3">Follitropin alfa</td>
+                                <td class="p-3">Recombinant</td>
+                                <td class="p-3">International Units (IU)</td>
+                                <td class="p-3">Daily</td>
+                                <td class="p-3">Widely used standard rFSH</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="p-3 font-bold">Follitropin Beta (Puregon)</td>
+                                <td class="p-3">Follitropin beta</td>
+                                <td class="p-3">Recombinant</td>
+                                <td class="p-3">International Units (IU)</td>
+                                <td class="p-3">Daily</td>
+                                <td class="p-3">Standard rFSH</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold">Follitropin Epsilon (Pergoveris)</td>
+                                <td class="p-3">Follitropin Epsilon + Lutropin alfa</td>
+                                <td class="p-3">Recombinant</td>
+                                <td class="p-3">International Units (IU)</td>
+                                <td class="p-3">Daily</td>
+                                <td class="p-3">Fixed ratio of FSH and LH</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="p-3 font-bold">Corifollitropin Alfa (Elonva)</td>
+                                <td class="p-3">Corifollitropin alfa</td>
+                                <td class="p-3">Recombinant</td>
+                                <td class="p-3">Micrograms (&micro;g)</td>
+                                <td class="p-3">Single injection (for 7 days)</td>
+                                <td class="p-3">Long-acting, convenient dosing</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold">HP-hMG (Menopur)</td>
+                                <td class="p-3">Menotropin (FSH + LH)</td>
+                                <td class="p-3">Urinary</td>
+                                <td class="p-3">International Units (IU)</td>
+                                <td class="p-3">Daily</td>
+                                <td class="p-3">Contains both FSH and LH activity</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="p-3 font-bold">Urofollitropin (uFSH) (Bravelle)</td>
+                                <td class="p-3">Urofollitropin</td>
+                                <td class="p-3">Urinary</td>
+                                <td class="p-3">International Units (IU)</td>
+                                <td class="p-3">Daily</td>
+                                <td class="p-3">Contains pure FSH</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <footer class="text-center pt-8 border-t-2 border-[#7A5195]">
+                <h2 class="text-2xl font-bold text-[#003F5C] mb-4">Key Takeaways for Clinical Practice</h2>
+                <p class="max-w-3xl mx-auto text-gray-700 mb-4">Follitropin delta offers a powerful, evidence-based tool for personalized ovarian stimulation. Its algorithm-driven dosing is a key feature, especially for high-AMH patients, where it demonstrably improves live birth rates and patient safety by reducing OHSS risk.</p>
+                <div class="bg-amber-100 border-l-4 border-amber-500 text-amber-700 p-4 rounded-md max-w-2xl mx-auto">
+                    <p class="font-bold">Summary Points</p>
+                    <ul class="list-disc list-inside mt-2 text-left space-y-1">
+                        <li>The only human recombinant FSH with a structure most similar to natural human FSH.</li>
+                        <li>Delivers proven outcomes with a superior efficacy/safety profile, particularly in high-AMH patients.</li>
+                        <li>Dosing flexibility allows for use in various protocols, including a mixed protocol with HP-hMG.</li>
+                    </ul>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const wrapLabel = (label) => {
+                const maxLength = 16;
+                if (typeof label !== 'string' || label.length <= maxLength) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > maxLength) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            };
+            
+            const sharedChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: {
+                                size: 12
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            };
+            
+            const brilliantBluesPalette = {
+                darkBlue: '#003F5C',
+                midBlue: '#374C80',
+                purple: '#7A5195',
+                magenta: '#BC5090',
+                pink: '#EF5675',
+                orange: '#FF764A',
+                yellow: '#FFA600'
+            };
+
+            const AMHOutcomesCtx = document.getElementById('AMHOutcomesChart');
+            if (AMHOutcomesCtx) {
+                const originalLabels = ['Live Birth Rate', 'OHSS Risk'];
+                new Chart(AMHOutcomesCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: originalLabels.map(wrapLabel),
+                        datasets: [
+                            {
+                                label: 'High AMH Responders (≥2.1 ng/mL)',
+                                data: [1.64, 0.27],
+                                backgroundColor: brilliantBluesPalette.purple,
+                                borderColor: brilliantBluesPalette.purple,
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Low AMH Responders (<2.1 ng/mL)',
+                                data: [0.86, 1.92],
+                                backgroundColor: brilliantBluesPalette.pink,
+                                borderColor: brilliantBluesPalette.pink,
+                                borderWidth: 1
+                            }
+                        ]
+                    },
+                    options: {
+                        ...sharedChartOptions,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 2.5,
+                                title: {
+                                    display: true,
+                                    text: 'Adjusted Odds Ratio (OR)'
+                                }
+                            }
+                        },
+                        plugins: {
+                            ...sharedChartOptions.plugins,
+                            tooltip: {
+                                ...sharedChartOptions.plugins.tooltip,
+                                callbacks: {
+                                    ...sharedChartOptions.plugins.tooltip.callbacks,
+                                    label: function(context) {
+                                        return `${context.dataset.label}: OR ${context.raw}`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const RITALiveBirthChartCtx = document.getElementById('RITALiveBirthChart');
+            if (RITALiveBirthChartCtx) {
+                new Chart(RITALiveBirthChartCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['RITA-1 (<35 years)', 'RITA-2 (≥35 years)'],
+                        datasets: [{
+                            label: 'Cumulative Live Birth Rate (%)',
+                            data: [62.5, 42.4],
+                            backgroundColor: [brilliantBluesPalette.purple, brilliantBluesPalette.pink],
+                            borderColor: [brilliantBluesPalette.purple, brilliantBluesPalette.pink],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        ...sharedChartOptions,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 80,
+                                title: {
+                                    display: true,
+                                    text: 'Percentage (%)'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const trialComparisonChartCtx = document.getElementById('trialComparisonChart');
+            if (trialComparisonChartCtx) {
+                new Chart(trialComparisonChartCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['ESTHER-1 (vs. Alfa)', 'GRAPE (vs. Alfa)', 'STORK (vs. Beta)'],
+                        datasets: [
+                            {
+                                label: 'Follitropin Delta',
+                                data: [29.8, 31.3, 23.5],
+                                backgroundColor: brilliantBluesPalette.purple,
+                                borderColor: brilliantBluesPalette.purple,
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Conventional Dosing',
+                                data: [30.7, 24.7, 18.6],
+                                backgroundColor: brilliantBluesPalette.pink,
+                                borderColor: brilliantBluesPalette.pink,
+                                borderWidth: 1
+                            }
+                        ]
+                    },
+                    options: {
+                        ...sharedChartOptions,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 40,
+                                title: {
+                                    display: true,
+                                    text: 'Live Birth Rate (%)'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const ohssComparisonChartCtx = document.getElementById('ohssComparisonChart');
+            if (ohssComparisonChartCtx) {
+                const originalLabels = ['ESTHER-1 (vs. Alfa)', 'GRAPE (vs. Alfa)', 'STORK (vs. Beta)'];
+                new Chart(ohssComparisonChartCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: originalLabels.map(wrapLabel),
+                        datasets: [
+                            {
+                                label: 'Follitropin Delta',
+                                data: [2.3, 5.0, 11.2],
+                                backgroundColor: brilliantBluesPalette.midBlue,
+                                borderColor: brilliantBluesPalette.midBlue,
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Conventional Dosing',
+                                data: [4.5, 9.6, 19.8],
+                                backgroundColor: brilliantBluesPalette.orange,
+                                borderColor: brilliantBluesPalette.orange,
+                                borderWidth: 1
+                            }
+                        ]
+                    },
+                    options: {
+                        ...sharedChartOptions,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 25,
+                                title: {
+                                    display: true,
+                                    text: 'OHSS & Preventive Interventions (%)'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const oocyteRWEChartCtx = document.getElementById('oocyteRWEChart');
+            if (oocyteRWEChartCtx) {
+                new Chart(oocyteRWEChartCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['ESTHER-1', 'Bachmann et al.', 'PROFILE', 'DELTA'],
+                        datasets: [{
+                            label: 'Oocytes Retrieved (mean)',
+                            data: [10.4, 11.2, 1.1, 11.3],
+                            backgroundColor: brilliantBluesPalette.purple,
+                            borderColor: brilliantBluesPalette.purple,
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        ...sharedChartOptions,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 15,
+                                title: {
+                                    display: true,
+                                    text: 'Number of Oocytes'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+            
+            const pregnancyRWEChartCtx = document.getElementById('pregnancyRWEChart');
+            if (pregnancyRWEChartCtx) {
+                new Chart(pregnancyRWEChartCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['ESTHER-1', 'PROFILE', 'DELTA'],
+                        datasets: [{
+                            label: 'Ongoing Pregnancy Rate (%)',
+                            data: [30.7, 23.5, 31.3],
+                            backgroundColor: brilliantBluesPalette.pink,
+                            borderColor: brilliantBluesPalette.pink,
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        ...sharedChartOptions,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 40,
+                                title: {
+                                    display: true,
+                                    text: 'Percentage (%)'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+        });
+    </script>
+</body>
+</html>
